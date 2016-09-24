@@ -10,25 +10,25 @@ The list of colours comes from [Wikipedia](https://en.wikipedia.org/wiki/List_of
     use dbeurive\Color\Picker;
 
     print 'HTML code for the color "Absolute Zero": ' . Picker::absoluteZero() . "\n";
-    print 'HTML code for the color "Aero Blue Zero": ' . Picker::aeroBlue() . "\n";
+    print 'HTML code for the color "Aero Blue": ' . Picker::aeroBlue() . "\n";
 
     print 'GraphViz code for the color "Absolute Zero": ' . Picker::absoluteZero('graphviz') . "\n";
-    print 'GraphViz code for the color "Aero Blue Zero": ' . Picker::aeroBlue('graphviz') . "\n";
+    print 'GraphViz code for the color "Aero Blue": ' . Picker::aeroBlue('graphviz') . "\n";
 
     Picker::setDefaultOutputFormat('rgb');
 
     print 'RGB triplet for the color "Absolute Zero": ' .  print_r(Picker::absoluteZero(), true) . "\n";
-    print 'RGB triplet for the color "Aero Blue Zero": ' . print_r(Picker::aeroBlue(), true) . "\n";
+    print 'RGB triplet for the color "Aero Blue": ' . print_r(Picker::aeroBlue(), true) . "\n";
 
     Picker::setDefaultOutputFormat('hsl');
 
     print 'HSL triplet for the color "Absolute Zero": ' .  print_r(Picker::absoluteZero(), true) . "\n";
-    print 'HSL triplet for the color "Aero Blue Zero": ' . print_r(Picker::aeroBlue(), true) . "\n";
+    print 'HSL triplet for the color "Aero Blue": ' . print_r(Picker::aeroBlue(), true) . "\n";
 
     Picker::setDefaultOutputFormat('hsv');
 
     print 'HSV triplet for the color "Absolute Zero": ' .  print_r(Picker::absoluteZero(), true) . "\n";
-    print 'HSV triplet for the color "Aero Blue Zero": ' . print_r(Picker::aeroBlue(), true) . "\n";
+    print 'HSV triplet for the color "Aero Blue": ' . print_r(Picker::aeroBlue(), true) . "\n";
 ```
 
 Which will output:
