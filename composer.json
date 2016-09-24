@@ -1,0 +1,27 @@
+{
+  "name": "dbeurive/Color",
+  "description": "This package contains implementations of a color picker.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Denis BEURIVE",
+      "email": "dbeurive.github@gmail.com"
+    }
+  ],
+  "keywords": ["color"],
+  "autoload": {
+    "psr-4": {
+      "dbeurive\\Color\\": "src"
+    }
+  },
+  "archive": {
+    "exclude": ["/tests", "/examples", "/doc", "/README.md", "/data"]
+  },
+  "require": {
+    "dbeurive/util": "*"
+  },
+  "require-dev": {
+    "phpdocumentor/phpdocumentor": "2.*",
+    "phpunit/phpunit": "5.5.*"
+  }
+}
