@@ -1,5 +1,5 @@
 {
-  "name": "dbeurive/Color",
+  "name": "dbeurive/color",
   "description": "This package contains implementations of a color picker.",
   "license": "MIT",
   "authors": [
@@ -16,9 +16,6 @@
   },
   "archive": {
     "exclude": ["/tests", "/examples", "/doc", "/README.md", "/data"]
-  },
-  "require": {
-    "dbeurive/util": "*"
   },
   "require-dev": {
     "phpdocumentor/phpdocumentor": "2.*",
