@@ -97,13 +97,13 @@ HSV triplet for the color "Aero Blue Zero": Array
 
 Form the command line:
 
-composer require dbeurive/color
+    composer require dbeurive/color
 
 Or, from within your file composer.json:
 
-"require": {
-    "dbeurive/color": "*"
-}
+    "require": {
+        "dbeurive/color": "*"
+    }
 
 
 # API
