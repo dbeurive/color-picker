@@ -25,16 +25,36 @@ function sep($inLength) {
 }
 
 $reflection = new \ReflectionClass(new Picker);
-printf("| %-45s | %-30s | %-20s |\n", 'Name of the color', 'Method', 'HTML color code');
-printf("| %-45s | %-30s | %-20s |\n", sep(45), sep(30), sep(20));
+printf("| %-45s | %-30s | %-20s | Sample |\n", 'Name of the color', 'Method', 'HTML color code');
+printf("| %-45s | %-30s | %-20s | ------ |\n", sep(45), sep(30), sep(20));
+$dotCommands = array();
+$n = 1;
 foreach ($reflection->getMethods(\ReflectionMethod::IS_STATIC) as $_index => $_m) {
     if (in_array($_m->name, array('setDefaultOutputFormat', 'getColor'))) {
         continue;
     }
+
     $method = $_m->name;
+    $dotFile = __DIR__ . DIRECTORY_SEPARATOR . 'dots' . DIRECTORY_SEPARATOR . "${method}.dot";
+    $imageFile = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'doc' . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . "${method}.gif";
+    $urlImage = 'https://github.com/dbeurive/color-picker/doc/images/' . "${method}.gif";
+
+    $graphVizColor = Picker::$method('graphviz');
+    $dot = <<<EOT
+    digraph "picker" {
+        node [ shape = "box", style="filled" ];
+        "sample" [ fillcolor="$graphVizColor" ];
+    }
+EOT;
+
+    file_put_contents($dotFile, $dot);
+    $dotCommands[] = "dot -Tgif ${dotFile} -o $imageFile";
+
     $name   = Picker::$list[$method]['name'];
     $html   = Picker::$list[$method]['html'];
-    printf("| %-45s | %-30s | %-20s |\n", $name, $method, $html);
+    printf("| %-45s | %-30s | %-20s | ![Sample]($urlImage) |\n", $name, $method . '($inOptFormat)', $html);
 }
 
+
+file_put_contents(__DIR__ . DIRECTORY_SEPARATOR . "dot.sh", implode("\n", $dotCommands));
 

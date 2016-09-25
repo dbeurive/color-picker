@@ -10640,7 +10640,7 @@ class Picker {
 	 * @return mixed The method returns the colour code for the given colour.
 	 */
 	static public function amberSaeEce($inOutputFormat=null) {
-		return self::getColor('amberSae/ece', $inOutputFormat);
+		return self::getColor('amberSaeEce', $inOutputFormat);
 	}
 
 
