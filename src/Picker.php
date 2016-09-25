@@ -403,7 +403,7 @@ class Picker {
 			'hsl'      => array(56, 100, 50),
 			'hsv'      => array(56, 100, 99)
 		),
-		'aurometalsaurus' => array(
+		'auroMetalSaurus' => array(
 			'name'     => 'AuroMetalSaurus',
 			'html'     => '#6E7F80',
 			'graphviz' => '#6E7F80',
@@ -627,7 +627,7 @@ class Picker {
 			'hsl'      => array(22, 76, 63),
 			'hsv'      => array(22, 61, 91)
 		),
-		'bigDipO’ruby' => array(
+		'bigDipORuby' => array(
 			'name'     => 'Big dip o’ruby',
 			'html'     => '#9C2542',
 			'graphviz' => '#9C2542',
@@ -4107,7 +4107,7 @@ class Picker {
 			'hsl'      => array(150, 100, 50),
 			'hsv'      => array(150, 100, 100)
 		),
-		'halayàúbe' => array(
+		'halayaUbe' => array(
 			'name'     => 'Halayà úbe',
 			'html'     => '#663854',
 			'graphviz' => '#663854',
@@ -10904,8 +10904,8 @@ class Picker {
 	 *        If the value null is specified, then default output format is returned (see method `setDefaultOutputFormat()`).
 	 * @return mixed The method returns the colour code for the given colour.
 	 */
-	static public function aurometalsaurus($inOutputFormat=null) {
-		return self::getColor('aurometalsaurus', $inOutputFormat);
+	static public function auroMetalSaurus($inOutputFormat=null) {
+		return self::getColor('auroMetalSaurus', $inOutputFormat);
 	}
 
 
@@ -11212,8 +11212,8 @@ class Picker {
 	 *        If the value null is specified, then default output format is returned (see method `setDefaultOutputFormat()`).
 	 * @return mixed The method returns the colour code for the given colour.
 	 */
-	static public function bigDipO’ruby($inOutputFormat=null) {
-		return self::getColor('bigDipO’ruby', $inOutputFormat);
+	static public function bigDipORuby($inOutputFormat=null) {
+		return self::getColor('bigDipORuby', $inOutputFormat);
 	}
 
 
@@ -15997,8 +15997,8 @@ class Picker {
 	 *        If the value null is specified, then default output format is returned (see method `setDefaultOutputFormat()`).
 	 * @return mixed The method returns the colour code for the given colour.
 	 */
-	static public function halayàúbe($inOutputFormat=null) {
-		return self::getColor('halayàúbe', $inOutputFormat);
+	static public function halayaUbe($inOutputFormat=null) {
+		return self::getColor('halayaUbe', $inOutputFormat);
 	}
 
 

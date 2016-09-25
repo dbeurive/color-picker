@@ -81,6 +81,19 @@ HSV triplet for the color "Aero Blue Zero": Array
 )
 ```
 
+# Installation
+
+Form the command line:
+
+composer require dbeurive/color
+
+Or, from within your file composer.json:
+
+"require": {
+    "dbeurive/color": "*"
+}
+
+
 # API
 
 Colour codes come in multiple formats :
@@ -155,7 +168,7 @@ Set the default output format. If not set, the default output format is 'html'. 
 | Atomic tangerine                              | atomicTangerine                | #FF9966              |
 | Auburn                                        | auburn                         | #A52A2A              |
 | Aureolin                                      | aureolin                       | #FDEE00              |
-| AuroMetalSaurus                               | aurometalsaurus                | #6E7F80              |
+| AuroMetalSaurus                               | auroMetalSaurus                | #6E7F80              |
 | Avocado                                       | avocado                        | #568203              |
 | Awesome                                       | awesome                        | #FF2052              |
 | Aztec Gold                                    | aztecGold                      | #C39953              |
@@ -183,7 +196,7 @@ Set the default output format. If not set, the default output format is 'html'. 
 | Begonia                                       | begonia                        | #FA6E79              |
 | Beige                                         | beige                          | #F5F5DC              |
 | Big Foot Feet                                 | bigFootFeet                    | #E88E5A              |
-| Big dip o’ruby                              | bigDipO’ruby                 | #9C2542              |
+| Big dip o’ruby                              | bigDipORuby                 | #9C2542              |
 | Bisque                                        | bisque                         | #FFE4C4              |
 | Bistre                                        | bistre                         | #3D2B1F              |
 | Bistre brown                                  | bistreBrown                    | #967117              |
@@ -618,7 +631,7 @@ Set the default output format. If not set, the default output format is 'html'. 
 | Grullo                                        | grullo                         | #A99A86              |
 | Gunmetal                                      | gunmetal                       | #2a3439              |
 | Guppie green                                  | guppieGreen                    | #00FF7F              |
-| Halayà úbe                                  | halayàúbe                    | #663854              |
+| Halayà úbe                                  | halayaUbe                    | #663854              |
 | Han blue                                      | hanBlue                        | #446CCF              |
 | Han purple                                    | hanPurple                      | #5218FA              |
 | Hansa yellow                                  | hansaYellow                    | #E9D66B              |
