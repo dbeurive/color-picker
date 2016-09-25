@@ -37,7 +37,7 @@ foreach ($reflection->getMethods(\ReflectionMethod::IS_STATIC) as $_index => $_m
     $method = $_m->name;
     $dotFile = __DIR__ . DIRECTORY_SEPARATOR . 'dots' . DIRECTORY_SEPARATOR . "${method}.dot";
     $imageFile = __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'doc' . DIRECTORY_SEPARATOR . 'images' . DIRECTORY_SEPARATOR . "${method}.gif";
-    $urlImage = 'https://github.com/dbeurive/color-picker/doc/images/' . "${method}.gif";
+    $urlImage = 'https://github.com/dbeurive/color-picker/blob/master/doc/images/' . "${method}.gif";
 
     $graphVizColor = Picker::$method('graphviz');
     $dot = <<<EOT
